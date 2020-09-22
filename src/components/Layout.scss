@@ -1,0 +1,35 @@
+@import '../assets/scss/theme.scss';
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: calc(0.75vmax + 2.25vmin);
+  font-family: system;
+
+  h1 {font-size: 3.5rem;}
+  h2 {font-size: 2.5rem;}
+  h3 {font-size: 2rem;}
+  h4 {font-size: 1.5rem;}
+  p {font-size: 1.2rem;}
+  li {font-size: 1.5rem;}
+
+  main {
+    padding-top: 5rem;
+  }
+
+  .theme-picker {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+  }
+}

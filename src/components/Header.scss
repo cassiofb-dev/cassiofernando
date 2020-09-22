@@ -1,0 +1,23 @@
+@import '../assets/scss/mixins';
+
+header {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  transition: top 0.5s;
+
+  a {
+    text-decoration: none;
+  }
+
+  .logo {
+    margin: 0.2rem 0 0 0;
+    height: 4.3rem;
+  }
+
+  nav > ul {
+    @include horizontal-list;
+  }
+}

@@ -1,0 +1,22 @@
+.project-tile {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 5%;
+
+  h3 {
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .stacks {
+    font-size: 1rem;
+    font-family: monospace;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}

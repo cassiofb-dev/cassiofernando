@@ -1,0 +1,58 @@
+@import 'themefy.scss';
+@import 'mixins.scss';
+
+.theme-container {
+  width: 100%;
+  min-height: 100vh;
+  transition: color 0.5s, background-color 0.5s;
+  
+  @include themify($themes) {
+    color: themed('textColor');
+    background-color: themed('backgroundColor');
+  }
+
+  .themed-navbar {
+    @include themify($themes) {
+      .themed-navitem {
+        transition: background-color 0.5s;
+        background-color: themed('navbarBackground');
+
+        &:hover {
+          background-color: themed('navbarHover');
+        }
+      }
+    }
+  }
+
+  .themed-link {
+    transition: color 1s;
+    @include themify($themes) {
+      color: change-color(themed('textColor'), $blue: 127);
+      transition: color 1s;
+
+      &:hover {
+        color: change-color(themed('textColor'), $blue: 255);
+      }
+    }
+  }
+
+  .themed-button {
+    outline: none;
+    cursor: pointer;
+    transition: color 1s, border-color 0.5s, background-color 1s;
+
+    @include themify($themes) {
+      border: themed('buttonBorder');
+      color: themed('buttonTextColor'); 
+      border-color: themed('buttonTextColor');
+      background-color: themed('buttonColor');
+
+      &:hover {
+        color: themed('buttonTextHoverColor');
+        border-color: themed('buttonTextHoverColor');
+        background-color: themed('buttonHoverColor');
+      }
+    }
+
+  }
+}

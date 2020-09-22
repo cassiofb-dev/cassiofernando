@@ -1,0 +1,21 @@
+.skills-grid {
+  padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  gap: 1rem;
+
+  .skill-tile {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    font-size: 4rem;
+    color: #536DFE;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    &:hover {
+      color: #F9A826;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}

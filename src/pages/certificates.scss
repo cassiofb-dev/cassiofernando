@@ -1,0 +1,10 @@
+.certificates-grid {
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  @media only screen and (orientation: portrait) {
+    grid-template-columns: 1fr;
+  }
+}

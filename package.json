@@ -1,0 +1,44 @@
+{
+  "name": "cassiofb-dev",
+  "version": "1.0.0",
+  "description": "cassiofb-dev portfolio web page",
+  "main": "src/pages/index.js",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "keywords": [
+    "portfolio",
+    "cassiofb-dev",
+    "react",
+    "gatsby",
+    "sass"
+  ],
+  "author": "cassiofb-dev",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^2.24.62",
+    "gatsby-plugin-sass": "^2.3.13",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^3.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.0"
+  }
+}

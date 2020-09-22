@@ -1,0 +1,27 @@
+.hero {
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
+
+  @media only screen and (orientation: portrait) {
+    flex-direction: column;
+  }
+
+  .proud-coder {
+    max-height: 80vh;
+    width: auto;
+  }
+
+  .title {
+    font-family: 'comic-sans';
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .role {
+    font-family: 'Times New Roman';
+  }
+}
