@@ -5,7 +5,7 @@ import './Footer.scss';
 
 export default function Footer(){
   return (
-    <footer>
+    <footer className='footer'>
       <hr/>
       <p>
         <a className='themed-link' href='mailto:cassiofb.souza@gmail.com'> <AiOutlineMail /> </a>

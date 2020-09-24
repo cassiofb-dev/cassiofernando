@@ -19,6 +19,7 @@ export default function Layout({ children }) {
     <div className={`theme-${themes[theme]}`}>
       <div className='theme-container'>
         <Helmet>
+            <html lang='en' />
             <title>Cassio Fernando | Computer Scientist</title>
             <meta name='description' content='Cassio Fernando personal website' />
             <link rel='icon' href={favicon} type='image/png' />
