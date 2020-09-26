@@ -20,26 +20,24 @@ export default function Seo() {
   );
 
   return (
-    <Helmet>
-      <html lang={seo.lang} />
-      <title>{seo.title}</title>
-      <link rel='icon' href={favicon} type='image/png' />
-      <base target='_blank' rel='noreferrer noopener'></base>
-      
-      <meta name="title" content="Cássio Fernando" />
-      <meta name="description" content="Computer Scientist | Cientista da Computação" />
-
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://cassiofernando.netlify.app/" />
-      <meta property="og:title" content="Cássio Fernando" />
-      <meta property="og:description" content="Computer Scientist | Cientista da Computação" />
-      <meta property="og:image" content="https://i.imgur.com/eyz4q0D.png" />
-
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://cassiofernando.netlify.app/" />
-      <meta property="twitter:title" content="Cássio Fernando" />
-      <meta property="twitter:description" content="Computer Scientist | Cientista da Computação" />
-      <meta property="twitter:image" content="https://i.imgur.com/eyz4q0D.png" />
-    </Helmet>
+    <Helmet
+      htmlAttributes={{lang: seo.lang}}
+      title={seo.title}
+      link={ {rel: 'icon', href: favicon, type:'image/png'} }
+      base={ {target: '_blank', rel: 'noreferrer noopener'} }
+      meta={[
+        {name: 'title', content: 'Cássio Fernando'},
+        {name: 'description', content: 'Computer Scientist | Cientista da Computação'},
+        {property: 'og:type', content: 'website'},
+        {property: 'og:url', content: 'https://cassiofernando.netlify.app/'},
+        {property: 'og:title', content: 'Cássui Fernando'},
+        {property: 'og:description', content: 'Computer Scientist | Cientista da Computação'},
+        {property: 'og:image', content: 'https://i.imgur.com/eyz4q0D.png'},
+        {property: 'twitter:card', content: 'summary_large_image'},
+        {property: 'twitter:url', content: 'https://cassiofernando.netlify.app/'},
+        {property: 'twitter:description', content: 'Computer Scientist | Cientista da Computação'},
+        {property: 'twitter:image', content: 'https://i.imgur.com/eyz4q0D.png'},
+      ]}
+    />
   );
 }
