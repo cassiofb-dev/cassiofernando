@@ -1,6 +1,6 @@
 {
   "name": "cassiofb-dev",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "cassiofb-dev portfolio web page",
   "main": "src/pages/index.js",
   "scripts": {
@@ -26,7 +26,12 @@
   "license": "MIT",
   "dependencies": {
     "gatsby": "^2.24.62",
+    "gatsby-plugin-manifest": "^2.4.31",
+    "gatsby-plugin-offline": "^3.2.28",
+    "gatsby-plugin-react-helmet": "^3.3.11",
     "gatsby-plugin-sass": "^2.3.13",
+    "gatsby-source-filesystem": "^2.3.30",
+    "gatsby-transformer-remark": "^2.8.35",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

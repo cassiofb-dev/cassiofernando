@@ -1,0 +1,18 @@
+.blog-post {
+  padding: 5% 5% 0 5%;
+
+  .title {
+    text-align: center;
+  }
+
+  .date {
+    text-align: right;
+    font-size: 0.8rem;
+  }
+
+  .markdown {
+    img {
+      max-width: 90%;
+    }
+  }
+}

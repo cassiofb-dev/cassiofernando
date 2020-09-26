@@ -1,9 +1,9 @@
 const themes = [
   'dark',
-  'light',
   'dracula',
   'tomorrowNight',
   'tomorrow',
+  'light',
 ];
 
 export default themes;

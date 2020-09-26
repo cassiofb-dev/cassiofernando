@@ -3,7 +3,7 @@ import React from 'react';
 import './certificates.scss';
 
 import certificates from '../assets/data/certificates.json';
-import Certicate from '../components/Certificate';
+import Certicate from '../templates/Certificate';
 
 export default function Certifcates() {
   return (

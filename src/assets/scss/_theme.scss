@@ -24,7 +24,7 @@
     }
   }
 
-  .themed-link {
+  .themed-link, a {
     transition: color 1s;
     @include themify($themes) {
       color: change-color(themed('textColor'), $blue: 127);

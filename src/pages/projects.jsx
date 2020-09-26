@@ -2,7 +2,7 @@ import React from 'react';
 
 import './projects.scss';
 
-import Project from '../components/Project';
+import Project from '../templates/Project';
 import projects from '../assets/data/projects.json';
 
 export default function Projects() {
