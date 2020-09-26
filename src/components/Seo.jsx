@@ -33,13 +33,13 @@ export default function Seo() {
       <meta property="og:url" content="https://cassiofernando.netlify.app/" />
       <meta property="og:title" content="Cássio Fernando" />
       <meta property="og:description" content="Computer Scientist | Cientista da Computação" />
-      <meta property="og:image" content="/cassiofernando.png" />
+      <meta property="og:image" content="https://i.imgur.com/eyz4q0D.png" />
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://cassiofernando.netlify.app/" />
       <meta property="twitter:title" content="Cássio Fernando" />
       <meta property="twitter:description" content="Computer Scientist | Cientista da Computação" />
-      <meta property="twitter:image" content="/cassiofernando.png" />
+      <meta property="twitter:image" content="https://i.imgur.com/eyz4q0D.png" />
     </Helmet>
   );
 }
