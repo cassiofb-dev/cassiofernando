@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import favicon from '../assets/images/favicons/light.png';
 
-export default function Seo() {
+export default function Seo({title}) {
   const { site: { siteMetadata: seo } } = useStaticQuery(
     graphql`
       query {
@@ -22,8 +22,8 @@ export default function Seo() {
   return (
     <Helmet
       htmlAttributes={{lang: seo.lang}}
-      title={seo.title}
-      link={ {rel: 'icon', href: favicon, type:'image/png'} }
+      title={title || seo.title}
+      link={ [ {rel: 'icon', href: favicon, type:'image/png'} ] }
       base={ {target: '_blank', rel: 'noreferrer noopener'} }
       meta={[
         {name: 'title', content: 'Cássio Fernando'},
