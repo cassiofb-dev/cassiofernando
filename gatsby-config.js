@@ -2,7 +2,6 @@ module.exports = {
   siteMetadata: {
     lang: 'en',
     title: 'Cassio Fernando | Computer Scientist',
-    description: 'Cassio Fernando\' portfolio and blog.',
   },
   plugins: [
     'gatsby-plugin-sass',
