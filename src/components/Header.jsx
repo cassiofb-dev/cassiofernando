@@ -7,7 +7,7 @@ import logo from '../assets/images/cassio.svg';
 
 export default function Header() {
   return (
-    <header className='header' style={state.style}>
+    <header className='header'>
       <nav className='themed-navbar'><ul>
         <li className='themed-navitem'><Link to='/'><img className='logo' src={logo} alt='logo'/></Link></li>
         <li className='themed-navitem'><Link className='themed-link' to='/skills/'>skills</Link></li>
