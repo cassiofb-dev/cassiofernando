@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 
 import './Header.scss';
@@ -6,21 +6,6 @@ import './Header.scss';
 import logo from '../assets/images/cassio.svg';
 
 export default function Header() {
-  const [state, setState] = useState({
-    pos: window.pageYOffset,
-    style: {top: '0'},
-  });
-
-  window.onscroll = () => {
-    const newState = {...state};
-    const newPos = window.pageYOffset;
-
-    newState.pos > newPos ? newState.style = {top: '0'} : newState.style = {top: '-5rem'};
-    newState.pos = newPos;
-
-    setState(newState);
-  };
-
   return (
     <header className='header' style={state.style}>
       <nav className='themed-navbar'><ul>
