@@ -8,12 +8,19 @@ import Footer from './Footer';
 import './Layout.scss';
 
 export default function Layout({ children }) {
-  const [theme, setTheme] = useState(0);
+  const [state, setState] = useState({
+    lang: 'en',
+    theme: 0,
+  });
 
-  const changeTheme = () => setTheme((theme + 1) % themes.length);
+  const changeTheme = () => {
+    const newState = {...state};
+    newState.theme = (newState.theme + 1) % themes.length;
+    setState(newState);
+  };
 
   return (
-    <div className={`theme-${themes[theme]}`}>
+    <div className={`theme-${themes[state.theme]}`}>
       <div className='theme-container'>
         <Header />
 

@@ -1,4 +1,4 @@
-[
+export default [
   {
     "title": "Responsive Web Design",
     "organization": "freeCodeCamp",

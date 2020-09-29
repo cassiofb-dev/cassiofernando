@@ -4,7 +4,7 @@ import './projects.scss';
 
 import Project from '../templates/Project';
 import SEO from '../components/SEO';
-import projects from '../assets/data/projects.json';
+import projects from '../assets/data/projects';
 
 export default function Projects() {
   return (

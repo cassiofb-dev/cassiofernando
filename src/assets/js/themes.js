@@ -1,9 +1,7 @@
-const themes = [
+export default [
   'dark',
   'dracula',
   'tomorrowNight',
   'tomorrow',
   'light',
 ];
-
-export default themes;

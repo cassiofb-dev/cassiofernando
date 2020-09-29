@@ -2,7 +2,7 @@ import React from 'react';
 
 import './certificates.scss';
 
-import certificates from '../assets/data/certificates.json';
+import certificates from '../assets/data/certificates';
 import Certicate from '../templates/Certificate';
 import SEO from '../components/SEO';
 

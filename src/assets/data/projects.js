@@ -1,4 +1,4 @@
-[
+export default [
   {
     "title": "Portfolio V2",
     "description": "This amazing site you are seeing now!",

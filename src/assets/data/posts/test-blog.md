@@ -1,7 +1,9 @@
 ---
 path: "/test"
 date: "2020-09-25"
+lang: "en"
 title: "blog teste"
+description: "just testing markdown parsing and bundle building in gatsby..."
 ---
 
 Testing blog.
