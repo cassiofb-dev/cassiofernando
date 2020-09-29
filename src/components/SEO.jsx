@@ -30,6 +30,7 @@ export default function SEO({ description, language, image: metaImage, title, pa
     <Helmet defer={false} title={pageTitle}>
       <html lang={lang} />
       <link rel='canonical' href={href} />
+      <base target='_blank' rel='noreferrer noopener' />
 
       <meta property="og:type" content="website" />
       <meta property="og:url" content={href} />
