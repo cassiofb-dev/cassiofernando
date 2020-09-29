@@ -9,7 +9,3 @@ exports.wrapPageElement = ({ element, props }) => {
     </Layout>
   );
 }
-
-exports.replaceHydrateFunction = () => {
-  if(window.location.pathname !== '/') window.location.replace('/');
-};
