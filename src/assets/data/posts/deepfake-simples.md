@@ -3,17 +3,15 @@ path: "/blog/deepfake-simples"
 date: "2020-09-29"
 language: "pt-br"
 author: "Cássio Fernando"
-title: "Deep Fake Simples no Colab"
-description: "Usando uma Deep Fake na minha Vó!"
+title: "Deepfake Simples no Colab"
+description: "Usando uma Deepfake na minha Vó!"
 metaImage: "https://i.imgur.com/wXtq3SK.png"
 tags: ["python","colab","ia","português"]
 ---
-# DeepFake
-
 ## O vídeo
 Nesse Final de Semana, sexta à segunda, eu fiquei na casa dos meus avós. Não tinha muita coisa para fazer lá, e debugar no bloco de notas estava me cansando.
 
-Então resolvi ver o youtube, lá me deparei com esse vídeo aqui: <a  href="https://www.youtube.com/watch?v=9gXG6cGCxIc">Tutorial Deep Fake</a>.
+Então resolvi ver o youtube, lá me deparei com esse vídeo aqui: <a  href="https://www.youtube.com/watch?v=9gXG6cGCxIc">Tutorial Deepfake</a>.
 
 Achei bem interessante e como usa o google colab eu não teria problemas com hardware ruim ou falta de programas. Então eu implementei ela na minha vó 😁
 
