@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     lang: 'en',
     author: 'Cassio Fernando',
-    title: 'Cassio Fernando | Computer Scientist',
+    title: 'Cassio Fernando | Computer Scientist-Cientista da Computação',
     siteUrl: 'https://cassiofernando.netlify.app/',
     description: 'Cassio Fernando personal blog and portfolio website, made with Gatsby, React and SASS',
     metaImage: 'https://i.imgur.com/eyz4q0D.png',
