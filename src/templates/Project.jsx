@@ -6,7 +6,7 @@ export default function Project({project}) {
   return (
     <div className='project-tile'>
       <a className='themed-link' href={project.url}>
-        <h3>{project.title}</h3>
+        <h2>{project.title}</h2>
       </a>
       <hr/>
       <h4>Description</h4>

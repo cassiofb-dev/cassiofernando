@@ -7,18 +7,14 @@
   src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
+:root {
+  font-size: 18px;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-size: calc(0.75vmax + 2.25vmin);
   font-family: system;
-
-  h1 {font-size: 3.5rem;}
-  h2 {font-size: 2.5rem;}
-  h3 {font-size: 2rem;}
-  h4 {font-size: 1.5rem;}
-  p {font-size: 1.2rem;}
-  li {font-size: 1.5rem;}
 
   main {
     padding-top: 5rem;

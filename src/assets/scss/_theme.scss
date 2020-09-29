@@ -33,6 +33,11 @@
       &:hover {
         color: change-color(themed('textColor'), $blue: 255);
       }
+
+      &:active, &:focus {
+        outline: 0;
+        border: none;
+      }
     }
   }
 
@@ -53,6 +58,17 @@
         background-color: themed('buttonHoverColor');
       }
     }
+  }
 
+  .themed-select {
+    outline: none;
+    cursor: pointer;
+
+    @include themify($themes) {
+      border: themed('buttonBorder');
+      color: themed('textColor'); 
+      border-color: themed('buttonTextColor');
+      background-color: themed('navbarBackground');
+    }
   }
 }

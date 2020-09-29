@@ -8,8 +8,14 @@ export default function BlogPost({ data: { markdownRemark: post} }) {
 
   return (
     <div className="blog-post">
-      <SEO title={post.frontmatter.title} />
-      <h2 className='title'>{post.frontmatter.title}</h2>
+      <SEO
+        description={post.frontmatter.description}
+        language={post.frontmatter.language}
+        metaImage={post.frontmatter.metaImage}
+        title={post.frontmatter.title}
+        pathname={post.frontmatter.path}
+      />
+      <h1 className='title'>{post.frontmatter.title}</h1>
       <hr/>
       <div className='markdown' dangerouslySetInnerHTML={{ __html: post.html }}></div>
       <hr/>
@@ -23,8 +29,11 @@ export const postQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       frontmatter {
         path
-        title
         date(formatString: "MMMM DD, YYYY")
+        language
+        title
+        description
+        metaImage
       }
       html
     }

@@ -1,9 +1,12 @@
 ---
-path: "/test"
+path: "/blog/test"
 date: "2020-09-25"
-lang: "en"
+language: "en"
+author: "Cássio Fernando"
 title: "blog teste"
-description: "just testing markdown parsing and bundle building in gatsby..."
+description: "Just testing markdown parsing and bundle building in gatsby."
+metaImage: null
+tags: ["code","react","gatsby","english"]
 ---
 
 Testing blog.
