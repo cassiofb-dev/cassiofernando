@@ -39,10 +39,10 @@ export default function SEO({ description, language, image: metaImage, title, pa
       <meta property="og:image" content={image} />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={href} />
-      <meta property="twitter:title" content={pageTitle} />
-      <meta property="twitter:description" content={metaDescription}/>
-      <meta property="twitter:image" content={image} />
+      <meta name="twitter:url" content={href} />
+      <meta name="twitter:title" content={pageTitle} />
+      <meta name="twitter:description" content={metaDescription}/>
+      <meta name="twitter:image" content={image} />
     </Helmet>
   );
 };

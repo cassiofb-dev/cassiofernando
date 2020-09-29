@@ -4,7 +4,7 @@ module.exports = {
     author: 'Cassio Fernando',
     title: 'Cassio Fernando | Computer Scientist',
     siteUrl: 'https://cassiofernando.netlify.app/',
-    description: 'Cassio Fernando Portfolio and Blog',
+    description: 'Cassio Fernando personal blog and portfolio website, made with Gatsby, React and SASS',
     metaImage: 'https://i.imgur.com/eyz4q0D.png',
     keywords: ['gatsby','react'],
   },
