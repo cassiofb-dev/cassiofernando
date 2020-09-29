@@ -4,6 +4,7 @@ import { useStaticQuery ,graphql } from 'gatsby';
 import './blog.scss';
 
 import BlogPreview from '../templates/BlogPreview';
+import SEO from '../components/SEO';
 
 export default function Blog() {
   const { allMarkdownRemark: { nodes: posts } } = useStaticQuery(
@@ -24,8 +25,11 @@ export default function Blog() {
   );
 
   return (
-    <div className='blog-grid'>
-      {posts.map((x, y) => <BlogPreview key={y} frontmatter={x.frontmatter} /> )}
+    <div className="blog">
+      <SEO title='Blog' />
+      <div className='blog-grid'>
+        {posts.map((x, y) => <BlogPreview key={y} frontmatter={x.frontmatter} /> )}
+      </div>
     </div>
   );
 }

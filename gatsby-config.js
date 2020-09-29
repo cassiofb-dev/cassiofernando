@@ -1,11 +1,16 @@
 module.exports = {
   siteMetadata: {
     lang: 'en',
+    author: 'Cassio Fernando',
     title: 'Cassio Fernando | Computer Scientist',
+    siteUrl: 'https://cassiofernando.netlify.app/',
+    description: 'Cassio Fernando Portfolio and Blog',
+    metaImage: 'https://i.imgur.com/eyz4q0D.png',
+    keywords: ['gatsby','react'],
   },
   plugins: [
-    'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -22,7 +27,8 @@ module.exports = {
         start_url: `/`,
         background_color: `#ccc`,
         theme_color: `#333`,
-        display: `standalone`,
+        display: 'minimal-ui',
+        icon: 'src/assets/images/logo.png',
       },
     },
     {

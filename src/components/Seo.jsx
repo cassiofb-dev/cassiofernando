@@ -1,43 +1,49 @@
-import React from 'react'
-import { Helmet } from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from "react"
+import { Helmet } from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
 
-import favicon from '../assets/images/favicons/light.png';
-
-export default function Seo({title}) {
-  const { site: { siteMetadata: seo } } = useStaticQuery(
+export default function SEO({ description, language, image: metaImage, title, pathname }) {
+  const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            lang
             title
             description
+            author
+            keywords
+            siteUrl
+            metaImage
           }
         }
       }
     `
   );
 
+  const pageTitle = title ? title : site.siteMetadata.title;
+  const lang = language ? language : 'en';
+  const metaDescription = description ? description : site.siteMetadata.description;
+  const image = metaImage ? metaImage : site.siteMetadata.metaImage;
+  const href = `${site.siteMetadata.siteUrl}${pathname || ''}`;
+
   return (
-    <Helmet
-      htmlAttributes={{lang: seo.lang}}
-      title={title || seo.title}
-      link={ [ {rel: 'icon', href: favicon, type:'image/png'} ] }
-      base={ {target: '_blank', rel: 'noreferrer noopener'} }
-      meta={[
-        {name: 'title', content: 'Cássio Fernando'},
-        {name: 'description', content: 'Computer Scientist | Cientista da Computação'},
-        {property: 'og:type', content: 'website'},
-        {property: 'og:url', content: 'https://cassiofernando.netlify.app/'},
-        {property: 'og:title', content: 'Cássui Fernando'},
-        {property: 'og:description', content: 'Computer Scientist | Cientista da Computação'},
-        {property: 'og:image', content: 'https://i.imgur.com/eyz4q0D.png'},
-        {property: 'twitter:card', content: 'summary_large_image'},
-        {property: 'twitter:url', content: 'https://cassiofernando.netlify.app/'},
-        {property: 'twitter:description', content: 'Computer Scientist | Cientista da Computação'},
-        {property: 'twitter:image', content: 'https://i.imgur.com/eyz4q0D.png'},
-      ]}
-    />
+    <Helmet defer={false} title={pageTitle}>
+      <html lang={lang} />
+      <link rel='canonical' href={href} />
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={href} />
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:description" content={metaDescription}/>
+      <meta property="og:image" content={image} />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={href} />
+      <meta property="twitter:title" content={pageTitle} />
+      <meta property="twitter:description" content={metaDescription}/>
+      <meta property="twitter:image" content={image} />
+    </Helmet>
   );
-}
+};
+
+// Reference https://www.gatsbyjs.com/tutorial/seo-and-social-sharing-cards-tutorial/

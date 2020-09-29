@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 
 import themes from '../assets/js/themes';
 
-import Seo from './Seo';
 import Header from './Header';
 import Footer from './Footer';
 
 import './Layout.scss';
 
-export default function Layout({ children, data }) {
+export default function Layout({ children }) {
   const [theme, setTheme] = useState(0);
 
   const changeTheme = () => setTheme((theme + 1) % themes.length);
@@ -16,8 +15,6 @@ export default function Layout({ children, data }) {
   return (
     <div className={`theme-${themes[theme]}`}>
       <div className='theme-container'>
-        <Seo data = {data} />
-
         <Header />
 
         <main>{children}</main>
