@@ -6,7 +6,7 @@ author: "Cássio Fernando"
 title: "Markdown Test"
 description: "Testing gatsby markdown parser."
 metaImage: null
-tags: ["code","react","gatsby","markdown","english"]
+tags: ["test","english"]
 ---
 
 This blog is just to see if all markdown features are working properly and what flavor it uses.

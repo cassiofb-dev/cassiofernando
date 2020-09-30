@@ -22,5 +22,6 @@
 
   nav > ul {
     @include horizontal-list;
+    @include no-select;
   }
 }

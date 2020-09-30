@@ -6,7 +6,7 @@ author: "Cássio Fernando"
 title: "Deepfake Simples no Colab"
 description: "Usando uma Deepfake na minha Vó!"
 metaImage: "https://i.imgur.com/wXtq3SK.png"
-tags: ["python","colab","ia","português"]
+tags: ["ai","portugues"]
 ---
 ## O vídeo
 Nesse Final de Semana, sexta à segunda, eu fiquei na casa dos meus avós. Não tinha muita coisa para fazer lá, e debugar no bloco de notas estava me cansando.

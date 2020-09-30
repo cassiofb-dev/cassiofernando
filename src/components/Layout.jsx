@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { VscSymbolColor } from "react-icons/vsc";
 
 import themes from '../assets/js/themes';
 
@@ -20,8 +21,9 @@ export default function Layout({ children }) {
         <main>{children}</main>
 
         <div
-          className='themed-button theme-picker'
+          className='theme-picker'
           onClick={changeTheme}>
+            <VscSymbolColor />
         </div>
 
         <Footer />

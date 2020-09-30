@@ -10,10 +10,10 @@ export default function Header() {
     <header className='header'>
       <nav className='themed-navbar'><ul>
         <li className='themed-navitem'><Link to='/'><img className='logo' src={logo} alt='logo'/></Link></li>
-        <li className='themed-navitem'><Link className='themed-link' to='/skills/'>skills</Link></li>
-        <li className='themed-navitem'><Link className='themed-link' to='/projects/'>projects</Link></li>
-        <li className='themed-navitem'><Link className='themed-link' to='/certificates/'>certificates</Link></li>
-        <li className='themed-navitem'><Link className='themed-link' to='/blog/'>blog</Link></li>
+        <li className='themed-navitem'><Link className='themed-link' to='/skills/'>Skills</Link></li>
+        <li className='themed-navitem'><Link className='themed-link' to='/projects/'>Projects</Link></li>
+        <li className='themed-navitem'><Link className='themed-link' to='/certificates/'>Certificates</Link></li>
+        <li className='themed-navitem'><Link className='themed-link' to='/blog/'>Blog</Link></li>
       </ul></nav>
     </header>
   );
