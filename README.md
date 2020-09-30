@@ -5,7 +5,7 @@
   Cássio Fernando
 </h1>
 <p align="center">
-<a href="https://brittanychiang.com" target="_blank"> Portfolio and Blog</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+<a href="https://cassiofernando.netlify.app/"> Portfolio and Blog</a> built with <a href="https://www.gatsbyjs.org/">Gatsby</a> and hosted with <a href="https://www.netlify.com/">Netlify</a>
 </p>
 <p align="center">
 	<a href="https://www.linkedin.com/in/cassiofb-dev/">
