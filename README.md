@@ -13,7 +13,7 @@
 	</a>
 	<img src="https://img.shields.io/github/repo-size/cassiofb-dev/cassiofernando?style=for-the-badge"  alt="repo size" />
 	<br/>
-	<img src="https://img.shields.io/github/license/cassiofb-dev/cassiofernando?style=for-the-badge" alt="license"/>
+	<img src="https://img.shields.io/github/license/cassiofb-dev/cassiofernando?color=blue&style=for-the-badge" alt="license"/>
 	<br/>
 	 <img src="https://api.netlify.com/api/v1/badges/5e54d445-396d-4b44-8bcf-f23324f9f6c3/deploy-status" alt="Netlify Status" />
  <br/><br/>
