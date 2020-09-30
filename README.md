@@ -8,7 +8,14 @@
 <a href="https://brittanychiang.com" target="_blank"> Portfolio and Blog</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
- <img src="https://api.netlify.com/api/v1/badges/5e54d445-396d-4b44-8bcf-f23324f9f6c3/deploy-status" alt="Netlify Status" />
+	<a href="https://www.linkedin.com/in/cassiofb-dev/">
+		<img alt="Cássio Fernando" src="https://img.shields.io/badge/-Cássio%20Fernando-blue?style=for-the-badge&logo=Linkedin&logoColor=white" />
+	</a>
+	<img src="https://img.shields.io/github/repo-size/cassiofb-dev/cassiofernando?style=for-the-badge"  alt="repo size" />
+	<br/>
+	<img src="https://img.shields.io/github/license/cassiofb-dev/cassiofernando?style=for-the-badge" alt="license"/>
+	<br/>
+	 <img src="https://api.netlify.com/api/v1/badges/5e54d445-396d-4b44-8bcf-f23324f9f6c3/deploy-status" alt="Netlify Status" />
  <br/><br/>
  <img src="https://i.imgur.com/eyz4q0D.png" alt="demo"/>
 </p>
