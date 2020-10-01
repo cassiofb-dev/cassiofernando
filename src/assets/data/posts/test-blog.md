@@ -6,7 +6,7 @@ author: "Cássio Fernando"
 title: "blog teste"
 description: "Just testing markdown parsing and bundle building in gatsby."
 metaImage: null
-tags: ["test","english"]
+tags: ["test"]
 ---
 
 Testing blog.

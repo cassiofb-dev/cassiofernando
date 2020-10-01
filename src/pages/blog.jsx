@@ -7,7 +7,10 @@ import BlogPreview from '../templates/BlogPreview';
 import SEO from '../components/SEO';
 
 export default function Blog() {
-  const [tag, setTag] = useState('tags');
+  const [state, setState] = useState({
+    'lang': 'en',
+    'tag': 'tags',
+  });
 
   const { allMarkdownRemark: { nodes: posts } } = useStaticQuery(
     graphql`
@@ -17,6 +20,7 @@ export default function Blog() {
             frontmatter {
               path
               date(formatString: "MMMM DD, YYYY")
+              language
               author
               title
               description
@@ -29,7 +33,25 @@ export default function Blog() {
     `
   );
 
+  const setTag = ({ target: {value} }) => {
+    const newState = { ...state };
+    newState.tag = value;
+    setState(newState);
+  }
+
+  const setLang = ({ target: {value} }) => {
+    const newState = { ...state };
+    newState.lang = value;
+    setState(newState);
+  }
+
   const allTags = [...new Set(posts.map(post => post.frontmatter.tags).flat())].sort();
+  const allLangs = [...new Set(posts.map(post => post.frontmatter.language))].sort();
+
+  const mapLangs = {
+    'en': 'english',
+    'pt-BR': 'português',
+  }
 
   return (
     <div className="blog">
@@ -37,17 +59,33 @@ export default function Blog() {
       <div className='selector-flex'>
         <select
           className='themed-select' 
+          defaultValue='en'
+          onChange={setLang}
+        >
+          {allLangs.map((x, y) => <option key={y} value={x}>{mapLangs[x]}</option>)}
+        </select>
+        <select
+          className='themed-select' 
           defaultValue='tags'
-          onChange={(event) => setTag(event.target.value)}
+          onChange={setTag}
         >
           <option value='tags'>tags</option>
           {allTags.map((x, y) => <option key={y} value={x}>{x}</option>)}
         </select>
       </div>
       <div className='blog-grid'>
-        {posts.filter(post => {
-          return tag === 'tags' ? true : post.frontmatter.tags.includes(tag);
-        }).map((x, y) => <BlogPreview key={y} frontmatter={x.frontmatter} /> )}
+        {posts.filter(
+          post => {
+            if(post.frontmatter.language !== state.lang) return false;
+            if(state.tag === 'tags') return true;
+            return post.frontmatter.tags.includes(state.tag);
+          }
+        ).map((x, y) => 
+            <BlogPreview 
+              key={y} 
+              frontmatter={x.frontmatter} 
+            /> 
+        )}
       </div>
     </div>
   );

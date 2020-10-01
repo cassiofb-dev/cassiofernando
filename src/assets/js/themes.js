@@ -1,6 +1,6 @@
 export default [
-  'dark',
   'dracula',
+  'dark',
   'tomorrowNight',
   'tomorrow',
   'light',

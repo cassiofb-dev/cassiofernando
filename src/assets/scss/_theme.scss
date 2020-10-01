@@ -63,6 +63,7 @@
   .themed-select {
     outline: none;
     cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
 
     @include themify($themes) {
       border: themed('buttonBorder');
