@@ -6,7 +6,7 @@ author: "Cássio Fernando"
 title: "Minecraft | Java arguments optimization"
 description: "Check multiple args lines to see what fits your minecraft better while understanding it."
 metaImage: "https://i.imgur.com/7FpLef0.png"
-tags: ["minecraft", "java"]
+tags: ["minecraft", "java", "jogos"]
 ---
 
 Cassio's Here. Last week I visited my grandma's house, and tried to play minecraft in a old computer. I had some issues with RAM and I couldn't install much mods, so I'll write a little about how to optimize minecraft (you can use it in other java games) so that it runs smoothly in your PC.

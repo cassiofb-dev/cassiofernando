@@ -47,15 +47,33 @@ export default function Blog() {
 
   const allTags = [...new Set(posts.map(post => post.frontmatter.tags).flat())].sort();
   const allLangs = [...new Set(posts.map(post => post.frontmatter.language))].sort();
-
   const mapLangs = {
     'en': 'english',
     'pt-BR': 'português',
   }
 
+  const renderPosts = posts => {
+    const rendered = posts.filter(
+      post => {
+        if(post.frontmatter.language !== state.lang) return false;
+        if(state.tag === 'tags') return true;
+        return post.frontmatter.tags.includes(state.tag);
+      }
+    ).map((x, y) => 
+        <BlogPreview 
+          key={y} 
+          frontmatter={x.frontmatter} 
+        /> 
+    );
+
+    return rendered.length > 0 ? rendered : state.lang === 'en'
+      ? <h2>Tag in another language.</h2>
+      : <h2>Tag em outro idioma.</h2>;
+  };
+
   return (
     <div className="blog">
-      <SEO title='Blog' />
+      <SEO title='Cassio Fernando | Blog' />
       <div className='selector-flex'>
         <select
           className='themed-select' 
@@ -74,18 +92,7 @@ export default function Blog() {
         </select>
       </div>
       <div className='blog-grid'>
-        {posts.filter(
-          post => {
-            if(post.frontmatter.language !== state.lang) return false;
-            if(state.tag === 'tags') return true;
-            return post.frontmatter.tags.includes(state.tag);
-          }
-        ).map((x, y) => 
-            <BlogPreview 
-              key={y} 
-              frontmatter={x.frontmatter} 
-            /> 
-        )}
+        {renderPosts(posts)}
       </div>
     </div>
   );

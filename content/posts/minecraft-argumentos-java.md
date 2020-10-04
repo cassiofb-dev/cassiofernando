@@ -6,7 +6,7 @@ author: "Cássio Fernando"
 title: "Minecraft | Alocando memória e otimizando"
 description: "Veja múltiplas linhas de argumento feitas por mim, outras pessoas e a própria mojang!"
 metaImage: "https://i.imgur.com/7FpLef0.png"
-tags: ["minecraft", "java"]
+tags: ["minecraft", "java", "games"]
 ---
 
 Cássio aqui. Semana passada visitei a casa da minha vó e tentei jogar minecraft no pc de lá. Porém não era um dos melhores e eu sofri para jogar com mods. Então dei uma pesquisada e estou compartilhando oque eu aprendi.

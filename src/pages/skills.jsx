@@ -1,6 +1,6 @@
 import React from 'react';
-
 import { SiC, SiCplusplus, SiCsharp, SiJava, SiPython, SiTensorflow, SiPytorch, SiHtml5, SiCss3, SiBulma, SiBootstrap ,SiSass, SiJavascript, SiJquery, SiNodeDotJs, SiReact, SiGatsby, SiNextDotJs, SiNodemon, SiTypescript, SiMongodb, SiMysql, SiGraphql, SiJest, SiExpo } from 'react-icons/si';
+
 import SEO from '../components/SEO';
 
 import './skills.scss';
@@ -8,7 +8,7 @@ import './skills.scss';
 export default function Skills() {
   return (
     <div className="skills">
-      <SEO title='Skills' />
+      <SEO title='Cassio Fernando | Skills' />
       <div className='skills-grid'>
         <div className="skill-tile"> <SiC /> </div>
         <div className="skill-tile"> <SiCplusplus /> </div>

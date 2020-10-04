@@ -1,6 +1,8 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
+
+import favicon from '../assets/images/logo.png';
 
 export default function SEO({ description, language, metaImage, title, pathname }) {
   const { site } = useStaticQuery(
@@ -29,20 +31,23 @@ export default function SEO({ description, language, metaImage, title, pathname 
   return (
     <Helmet defer={false} title={pageTitle}>
       <html lang={lang} />
+
       <link rel='canonical' href={href} />
+      <link rel='shortcut icon' href={favicon} />
+
       <base target='_blank' rel='noreferrer noopener' />
 
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={href} />
-      <meta property="og:title" content={pageTitle} />
-      <meta property="og:description" content={metaDescription}/>
-      <meta property="og:image" content={image} />
+      <meta property='og:type' content='website' />
+      <meta property='og:url' content={href} />
+      <meta property='og:title' content={pageTitle} />
+      <meta property='og:description' content={metaDescription} />
+      <meta property='og:image' content={image} />
 
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content={href} />
-      <meta name="twitter:title" content={pageTitle} />
-      <meta name="twitter:description" content={metaDescription}/>
-      <meta name="twitter:image" content={image} />
+      <meta name='twitter:card' content='summary_large_image' />
+      <meta name='twitter:url' content={href} />
+      <meta name='twitter:title' content={pageTitle} />
+      <meta name='twitter:description' content={metaDescription} />
+      <meta name='twitter:image' content={image} />
     </Helmet>
   );
 };
