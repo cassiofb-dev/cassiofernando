@@ -37,6 +37,8 @@ export default function SEO({ description, language, metaImage, title, pathname 
 
       <base target='_blank' rel='noreferrer noopener' />
 
+      <meta name="google-site-verification" content="_P7WWCy9LXTfvFwcHp5y-c2XSNqut58ZGbuzwNVBXT8" />
+
       <meta property='og:type' content='website' />
       <meta property='og:url' content={href} />
       <meta property='og:title' content={pageTitle} />
