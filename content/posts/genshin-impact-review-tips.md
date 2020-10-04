@@ -4,12 +4,12 @@ date: "2020-10-03"
 language: "en"
 author: "Cássio Fernando"
 title: "Genshin Impact | Review, Tips and Redeem Codes"
-description: "Hello, I want to share my opnion on this amazing game and share some useful tips too!"
+description: "Hello, I want to share my opinion on this amazing game and share some useful tips too!"
 metaImage: "https://i.imgur.com/Aq2rK4L.png"
 tags: ["genshin impact", "games"]
 ---
 
-Cassio's here. Yesterday I downloaded Genshin Impact because of my brother and the online hype. After playing it for a few hours I'm here to share my opnion with you.
+Cassio's here. Yesterday I downloaded Genshin Impact because of my brother and the online hype. After playing it for a few hours I'm here to share my opinion with you.
 
 ## The Game
 
