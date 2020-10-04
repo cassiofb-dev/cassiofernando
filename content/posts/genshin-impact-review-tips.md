@@ -30,8 +30,6 @@ Notable cool mechanincs are:
  - Character Switching
  - Team Building
 
-
-
 ### Plot 7/10
 
 As said, the plot is not the masterpiece. What makes the game awesome is how they adapt this plot into the game. Paimon is so funny and adorable that you would want one too.
