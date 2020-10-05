@@ -60,3 +60,4 @@ Here I'll share some useful and cool sites that may help you:
 
  - [Genshin GG](https://genshin.gg/)
  - [Genshin Wiki](https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki)
+ - [Genshin Map](https://genshin-impact-map.appsample.com/#/)
