@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import favicon from '../assets/images/logo.png';
+import favicon from '../assets/images/logo_short.png.png';
 
 export default function SEO({ description, language, metaImage, title, pathname }) {
   const { site } = useStaticQuery(
@@ -38,6 +38,7 @@ export default function SEO({ description, language, metaImage, title, pathname 
       <base target='_blank' rel='noreferrer noopener' />
 
       <meta name="google-site-verification" content="_P7WWCy9LXTfvFwcHp5y-c2XSNqut58ZGbuzwNVBXT8" />
+      <meta name="description" content={metaDescription} />
 
       <meta property='og:type' content='website' />
       <meta property='og:url' content={href} />
@@ -50,6 +51,7 @@ export default function SEO({ description, language, metaImage, title, pathname 
       <meta name='twitter:title' content={pageTitle} />
       <meta name='twitter:description' content={metaDescription} />
       <meta name='twitter:image' content={image} />
+
     </Helmet>
   );
 };
