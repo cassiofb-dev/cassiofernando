@@ -10,7 +10,7 @@ export default function Hero() {
       <div>
         <h2 className='subtitle'>Hello Everyone!<br/>My name is</h2>
         <h1 className='title'>Cássio Fernando</h1>
-        <h2 className='subtitle'>I'm a <span className='role'>Computer Scientist</span> 👨‍🔬<br/>based on Brazil</h2>
+        <h2 className='subtitle'>I'm a <span className='role'>Computer Scientist</span> 👨‍🔬<br/>based in Brazil</h2>
       </div>
       <img className='proud-coder' src={proudCoder} alt='You expected an alt but it was me DIO!'/>
     </section>
