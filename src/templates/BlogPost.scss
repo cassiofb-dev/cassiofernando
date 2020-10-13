@@ -15,10 +15,21 @@
       max-width: 90%;
     }
 
+    h1 {
+      padding: 1rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      text-align: center;
+      border-bottom: 0.2rem solid rgba(0, 0, 0, 0.5);
+    }
+
+
     h2 {
+      padding: 0.5rem;
       margin-top: 4rem;
       margin-bottom: 3rem;
       text-align: center;
+      border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5);
     }
 
     h3 {
