@@ -30,3 +30,62 @@ Segue os links:
 
  - [Frontend](https://happy-frontend.netlify.app/)
  - [Backend](https://happy-back-end.herokuapp.com/)
+
+### Árvores de arquivos backend - Dia 3
+```
+📦src
+ ┣ 📂config
+ ┃ ┗ 📜upload.ts
+ ┣ 📂controllers
+ ┃ ┗ 📜OrphanagesController.ts
+ ┣ 📂database
+ ┃ ┣ 📂migrations
+ ┃ ┃ ┣ 📜1602604062694-create_orphanages.ts
+ ┃ ┃ ┗ 📜1602619431968-create_images.ts
+ ┃ ┣ 📜connection.ts
+ ┃ ┗ 📜database.sqlite
+ ┣ 📂errors
+ ┃ ┗ 📜handler.ts
+ ┣ 📂models
+ ┃ ┣ 📜Image.ts
+ ┃ ┗ 📜Orphanage.ts
+ ┣ 📂views
+ ┃ ┣ 📜image_view.ts
+ ┃ ┗ 📜orphanage_view.ts
+ ┣ 📜routes.ts
+ ┗ 📜server.ts
+```
+
+### Árvores de arquivos frontend - Dia 3
+
+```
+📦src
+ ┣ 📂components
+ ┃ ┗ 📜Sidebar.tsx
+ ┣ 📂images
+ ┃ ┣ 📜landing.svg
+ ┃ ┣ 📜logo.svg
+ ┃ ┗ 📜map-marker.svg
+ ┣ 📂pages
+ ┃ ┣ 📜CreateOrphanage.tsx
+ ┃ ┣ 📜Landing.tsx
+ ┃ ┣ 📜Orphanage.tsx
+ ┃ ┗ 📜OrphanagesMap.tsx
+ ┣ 📂services
+ ┃ ┗ 📜api.ts
+ ┣ 📂styles
+ ┃ ┣ 📂components
+ ┃ ┃ ┗ 📜sidebar.css
+ ┃ ┣ 📂pages
+ ┃ ┃ ┣ 📜create-orphanage.css
+ ┃ ┃ ┣ 📜landing.css
+ ┃ ┃ ┣ 📜orphanage-map.css
+ ┃ ┃ ┗ 📜orphanage.css
+ ┃ ┗ 📜global.css
+ ┣ 📂utils
+ ┃ ┗ 📜mapIcon.ts
+ ┣ 📜App.tsx
+ ┣ 📜index.tsx
+ ┣ 📜react-app-env.d.ts
+ ┗ 📜routes.tsx
+```
