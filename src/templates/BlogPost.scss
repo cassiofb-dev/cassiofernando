@@ -43,5 +43,7 @@
       background-color: rgba($color: #aaa, $alpha: 0.2);
       border-left: 0.5rem solid rgba($color: #aaa, $alpha: 0.5);
     }
+
+    .katex { overflow: auto hidden; }
   }
 }

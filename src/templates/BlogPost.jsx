@@ -1,8 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import './BlogPost.scss';
 import SEO from '../components/SEO';
+
+import '../assets/scss/prism-tomorrow.scss';
+import 'katex/dist/katex.min.css';
+
+import './BlogPost.scss';
 
 export default function BlogPost({ data: { markdownRemark: post} }) {
 
